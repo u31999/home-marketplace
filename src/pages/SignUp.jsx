@@ -6,6 +6,7 @@ import {setDoc, doc, serverTimestamp} from 'firebase/firestore'
 import { db } from '../firebase.config'
 import { toast } from "react-toastify"
 import visibilityIcon from '../assets/svg/visibilityIcon.svg'
+import GoogleOAuth from "../component/GoogleOAuth"
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false)
@@ -54,6 +55,11 @@ function SignUp() {
     }
   }
 
+  // Fix the margin for sign up
+  const inputMarginStyle = {
+    marginBottom: '1rem'
+  }
+
   return (
     <>
       <div className="pageContainer">
@@ -64,16 +70,22 @@ function SignUp() {
           <form onSubmit={onSubmit}>
            <input type='text' className="nameInput" 
             placeholder="Your Name" id="name" value={name}
-            onChange={onChange} />
+            onChange={onChange} 
+              style={inputMarginStyle}
+            />
 
             <input type='email' className="emailInput" 
             placeholder="Email" id="email" value={email}
-            onChange={onChange} />
+            onChange={onChange} 
+            style={inputMarginStyle}
+            />
 
-            <div className="passwordInputDiv">
+            <div className="passwordInputDiv" style={inputMarginStyle}>
               <input type={showPassword ? 'text' : 'password'}
               className='passwordInput' placeholder="Password"
-              id="password" value={password} onChange={onChange} />
+              id="password" value={password} onChange={onChange} 
+              style={{marginBottom: '0rem'}}
+              />
               <img src={visibilityIcon} 
               className="showPassword" alt="show password" 
               onClick={() => setShowPassword((prevState) => !prevState)}
@@ -91,7 +103,8 @@ function SignUp() {
               </button>
             </div>
           </form>
-          {/* Google Oauth */}
+          
+          <GoogleOAuth />
           <Link to='/sign-in' className="registerLink">
             Sign In Instead
           </Link>
