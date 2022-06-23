@@ -11,6 +11,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import Navbar from "./component/Navbar";
 import PrivateRoute from "./component/PrivateRoute";
 import CreateListing from "./pages/CreateListing";
+import Listing from "./pages/Listing";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/create-listing" element={<CreateListing />} />
+          <Route path="/category/:ctegoryName/:listingId" element={<Listing />} />
         </Routes>
         <Navbar />
       </Router>
