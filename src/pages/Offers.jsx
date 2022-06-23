@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import {useParams} from 'react-router-dom'
 import {collection, getDocs, query, where,
    orderBy, limit} from 'firebase/firestore'
 import {db} from '../firebase.config'
@@ -10,8 +9,6 @@ import ListingItems from "../component/ListingItems"
 function Offers() {
   const [listing, setLitsting] = useState(null)
   const [loading, setLoading] = useState(true)
-
-  const params = useParams()
 
   useEffect(() => {
     const fetchListings = async () => {
