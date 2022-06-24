@@ -7,6 +7,8 @@
 - Contact the owner of the house from the house page.
 - The location of the house is shown in the house page.
 
+# [Live View](https://home-marketplace-lake.vercel.app/)
+
 # Build using
 
 - React for front-end

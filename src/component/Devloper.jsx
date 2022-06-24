@@ -14,9 +14,9 @@ function Devloper({close}) {
                 <ul className='developerList'>
                 <li>React for front-end</li>
                 <li>Firebase for back-end</li>
-                <li>Slider using <a href="https://swiperjs.com/">Swiper <FaLink /></a></li>
-                <li>Map using <a href="https://leafletjs.com/">leaflet <FaLink /></a></li>
-                <li><a href="#">Projet Source Code <FaGithub /></a></li>
+                <li>Slider using <a href="https://swiperjs.com/" target='_blank' rel='noreferrer'>Swiper <FaLink /></a></li>
+                <li>Map using <a href="https://leafletjs.com/" target='_blank' rel='noreferrer'>leaflet <FaLink /></a></li>
+                <li><a href="https://github.com/u31999/home-marketplace" target='_blank' rel='noreferrer'>Projet Source Code <FaGithub /></a></li>
                 </ul>
             </div>
             <div>
