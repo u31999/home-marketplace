@@ -1,11 +1,11 @@
 # Home MarketPlace
 
 - Web application for renting or saling houses.
-- User Sign-up using google account or with his email.
+- User Sign-up using google account or email.
 - Sign-in and sign-out, and reset-password functionality.
-- User can add or edit house item from his profile page.
-- Contact the owner of the house from the house page.
-- The location of the house is shown in the house page.
+- User can add or edit houses from his profile page.
+- Contact the owner from the house page.
+- The location of the house in map.
 
 # [Live View](https://home-marketplace-lake.vercel.app/)
 
