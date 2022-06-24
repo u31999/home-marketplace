@@ -8,6 +8,7 @@ function Explore() {
     <div className='explore'>
         <header>
           <p className='pageHeader'>Explore</p>
+          
         </header>
 
         <main>

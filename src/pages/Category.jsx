@@ -6,7 +6,6 @@ import {db} from '../firebase.config'
 import { toast } from "react-toastify"
 import Spinners from '../component/Spinners'
 import ListingItems from "../component/ListingItems"
-import { NIL } from "uuid"
 
 function Category() {
   const [listing, setLitsting] = useState(null)

@@ -41,6 +41,8 @@ function Slider() {
 
     if(loading) return <Spinners />
 
+    if(listing.length === 0) return <></>
+
   return  listing && (
     <>
         <p className="exploreHeading">Recomended</p>
