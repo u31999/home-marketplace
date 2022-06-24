@@ -45,6 +45,7 @@ function ListingItems({listing, id, onDelete}) {
                 </div>
             </div>
         </Link>
+        <div>
 
         {
             onDelete && (
@@ -52,6 +53,7 @@ function ListingItems({listing, id, onDelete}) {
                 fill='rgb(231, 76, 60)' onClick={() => onDelete(listing.id, listing.name)}/>
             )
         }
+        </div>
     </li>
   )
 }

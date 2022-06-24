@@ -47,7 +47,7 @@ function Slider() {
         <Swiper 
         style={{height: '17rem'}}
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        autoplay={{delay: 4000}}
+        autoplay={{delay: 5000}}
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: true }}>
